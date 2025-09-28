@@ -389,10 +389,10 @@ def after_request(response):
 def home():
     """Main application page with monitoring links"""
     return '''
-    <h1>🚀 DevOps Monitoring Lab</h1>
+    <h1> DevOps Monitoring Lab</h1>
     <p>Sample application demonstrating Prometheus monitoring integration.</p>
     
-    <h2>🔍 Application Endpoints:</h2>
+    <h2> Application Endpoints:</h2>
     <ul>
         <li><a href="/metrics"> Prometheus Metrics</a></li>
         <li><a href="/health"> Health Check</a></li>
@@ -516,9 +516,9 @@ def metrics():
         return Response("# Metrics unavailable\n", mimetype=CONTENT_TYPE_LATEST), 500
 
 if __name__ == '__main__':
-    print("🚀 Starting DevOps Sample Application...")
-    print("📊 Metrics: http://localhost:5000/metrics")
-    print("❤️ Health: http://localhost:5000/health")
+    print("Starting DevOps Sample Application...")
+    print("Metrics: http://localhost:5000/metrics")
+    print("Health: http://localhost:5000/health")
     
     # Initialize metrics
     ACTIVE_USERS.set(random.randint(10, 50))
