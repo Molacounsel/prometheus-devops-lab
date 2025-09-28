@@ -550,6 +550,15 @@ docker-compose ps
 # cadvisor       Up
 # sample-app     Up
 ```
+***Screenshot: Docker Container Status***
+<img width="1233" height="254" alt="Screenshot from 2025-09-27 10-31-52" src="https://github.com/user-attachments/assets/23b52cf5-adee-49fd-b9cc-fc8c63236957" />
+Image 1: Docker Compose showing all 5 containers successfully running with their respective ports,
+commands, and health status
+
+***Screenshot: Docker Build Process***
+<img width="1233" height="254" alt="Screenshot from 2025-09-27 10-32-04" src="https://github.com/user-attachments/assets/3bfb7200-4b52-40ed-a1fa-55d5b9b08f75" />
+Image 2: Terminal output showing the Docker Compose build and startup process with all services
+being created successfully.
 
 4. **Access services**:
 - **Prometheus**: http://localhost:9090
@@ -557,6 +566,11 @@ docker-compose ps
 - **Sample App**: http://localhost:5000
 - **cAdvisor**: http://localhost:8080
 - **Node Exporter**: http://localhost:9100/metrics
+
+***Screenshot: Sample Application Interface***
+<img width="1278" height="679" alt="Screenshot from 2025-09-27 23-15-54" src="https://github.com/user-attachments/assets/d410dc8a-5b64-4d51-8e84-eeeae8228200" />
+Image 3: The DevOps Monitoring Lab web interface showing all available endpoints and links to the
+complete monitoring stack components (Prometheus, Grafana, cAdvisor, Node Exporter).
 
 ### Verification and Testing
 
@@ -567,6 +581,11 @@ docker-compose ps
    - node-exporter (1/1 up)
    - cadvisor (1/1 up)
    - sample-app (1/1 up)
+***Screenshot: Prometheus Targets Status***
+<img width="1278" height="679" alt="Screenshot from 2025-09-27 23-10-40" src="https://github.com/user-attachments/assets/2b668acd-9a26-405f-a96d-875eceb1e0a2" />
+Image 4: Prometheus UI showing all monitoring targets with "UP" status, displaying scrape duration,
+last scrape times, and endpoint health for each service (cadvisor, node-exporter, prometheus, and
+sample-app).
 
 #### Generate Test Data
 ```bash
