@@ -394,14 +394,14 @@ def home():
     
     <h2>🔍 Application Endpoints:</h2>
     <ul>
-        <li><a href="/metrics">📊 Prometheus Metrics</a></li>
-        <li><a href="/health">❤️ Health Check</a></li>
+        <li><a href="/metrics"> Prometheus Metrics</a></li>
+        <li><a href="/health"> Health Check</a></li>
         <li><a href="/simulate-load">⚡ Simulate Load</a></li>
-        <li><a href="/simulate-error">💥 Simulate Errors</a></li>
-        <li><a href="/user-activity">👥 User Activity</a></li>
+        <li><a href="/simulate-error"> Simulate Errors</a></li>
+        <li><a href="/user-activity"> User Activity</a></li>
     </ul>
     
-    <h2>📊 Monitoring Stack:</h2>
+    <h2> Monitoring Stack:</h2>
     <ul>
         <li><a href="http://localhost:9090" target="_blank">Prometheus UI</a> - Metrics & Alerts</li>
         <li><a href="http://localhost:3000" target="_blank">Grafana</a> - Dashboards (admin/devops123)</li>
